@@ -1,0 +1,1563 @@
+body {
+    background-color: black;
+}
+.st1{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 9rem;
+    right: 20rem;
+    animation:st 1s linear infinite;
+}
+.st2{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 1rem;
+    right: 40rem;
+    animation:st 1s linear infinite;
+}
+.st3{  position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 4rem;
+    left: 10rem;
+    animation:st 1s linear infinite;
+}
+.st4{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 9rem;
+    left: 20rem;
+    animation:st 1s linear infinite;
+}
+.st5{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 1rem;
+    left: 30rem; 
+    animation:st 1s linear infinite;
+}
+.st6{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 10rem;
+    left: 39rem; 
+    animation:st 1s linear infinite;
+}
+.st7{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 5rem;
+    left: 45rem;  
+    animation:st 1s linear infinite;
+}
+.st8{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 1rem;
+    left: 55rem;   
+    animation:st 1s linear infinite;
+}
+.st9{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 10rem;
+    left: 65rem;  
+    animation:st 1s linear infinite;
+}
+.st10{
+    position: absolute;
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 20rem;
+    left: 7rem;  
+    animation:st 1s linear infinite;
+}
+@keyframes st{
+    0%
+    {
+        background-color: var(--color1);
+    }
+    50%{
+        background-color: var(--color7);
+    }
+    100%{
+        background-color: var(--color1);
+    }
+}
+.ground {
+    position: relative;
+    background-color: var(--color1);
+    width: 100vw;
+    height: 50vh;
+    bottom: -30rem;
+    z-index: -2;
+}
+
+.windmill {
+    position: relative;
+}
+@property --color1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: white;
+}
+@property --color2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: red;
+}
+@property --color3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: pink;
+}
+@property --color4 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: blue;
+}
+@property --color5 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: green;
+}
+@property --color6 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: black;
+}
+@property --color7 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: yellow;
+}
+@property --color8 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: bisque;
+}
+@property --color9 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: brown;
+}
+.pole {
+    position: absolute;
+    width: 50px;
+    height: 900px;
+    right: 10rem;
+    top: -20rem;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    animation: 2s pole linear infinite;
+}
+@keyframes pole{
+    0%{ 
+        --color1: white;
+        --color3: pink;
+        --color2: red;
+    }
+    33%{ 
+        --color1: red;
+        --color3: white;
+        --color2: pink;
+    }
+    66%{ 
+        --color1: pink;
+        --color3: red;
+        --color2: white;
+    }
+    100%{ 
+        --color1: white;
+        --color3: pink;
+        --color2: red;
+    }
+}
+
+.fan {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    top: .5rem;
+    left: -1rem;
+    animation: wind 2s linear infinite ;
+}
+
+@keyframes wind {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fb1 {
+    position: absolute;
+    background-color: var(--color1);
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 60px;
+    height: 150px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -5rem;
+    left: 1rem;
+    transform: rotate(-1deg);
+    animation: pole .1s linear infinite;
+}
+
+.fb2 {
+    position: absolute;
+    background-color: var(--color3);
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 60px;
+    height: 150px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 1.5rem;
+    left: 5rem;
+    transform: rotate(120deg);
+    animation: pole .1s linear infinite;
+}
+
+.fb3 {
+    position: absolute;
+    background-color: var(--color2);
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 60px;
+    height: 150px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 1.3rem;
+    left: -3rem;
+    transform: rotate(-120deg);
+    animation: pole .1s linear infinite;
+
+}
+
+.tree {
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    border-radius: 50px 50px 10px 0px;
+    left: 520px;
+    top: 220px;
+    animation: pole 1s linear infinite;
+}
+
+.tcb {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    top: -4.01rem;
+}
+
+.star {
+    position: absolute;
+    top: -50px;
+    left: -23px;
+    font-size: 60px;
+    height: 70px;
+    width: 60px;
+    border-radius: 50%;
+    z-index: 1;
+    filter: hue-rotate(0deg);
+    animation: 2s star infinite;
+}
+
+@keyframes star {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);;
+    }
+
+    100% {
+        filter: hue-rotate(360deg);;
+    }
+}
+
+.b19 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 1rem;
+    left: -.8rem;
+    transform: rotate(-50deg);
+    animation: 2s pole infinite;
+}
+
+.b20 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 2rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.ltb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    left: -3rem;
+    /* top: 20px; */
+    transform: rotate(-120deg);
+}
+
+.b1 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 1rem;
+    left: 1rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b2 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 1rem;
+    left: -1rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b3 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 3.5rem;
+    left: .5rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.rtb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    left: 2rem;
+    transform: rotate(120deg);
+}
+
+.b4 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 2rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b5 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 4rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b6 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -1rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.lmb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    left: -3rem;
+    top: 100px;
+    transform: rotate(-120deg);
+}
+
+.b7 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 1rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b8 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 4rem;
+    left: -.8rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b9 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -1rem;
+    left: -.8rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.rmb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    top: 100px;
+    left: 2rem;
+    transform: rotate(120deg);
+}
+
+.b10 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 2rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b11 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -1rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b12 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 2rem;
+    left: -1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.lbb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    left: -3rem;
+    top: 200px;
+    transform: rotate(-120deg);
+}
+
+.b13 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 1rem;
+    left: -.8rem;
+    transform: rotate(-50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b14 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -1rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b15 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 3rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.rbb {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-color: var(--color5);
+    border-radius: 50% 50% 0% 0%;
+    top: 200px;
+    left: 2rem;
+    transform: rotate(120deg);
+}
+
+.b16 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 2rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b17 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -1rem;
+    left: 1rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+.b18 {
+    position: absolute;
+    background: linear-gradient(45deg,var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2),var(--color1),var(--color3),var(--color2) );
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: 4rem;
+    transform: rotate(50deg);
+    animation: 2s pole linear infinite;
+}
+
+
+.santa {
+    position: relative;
+    left: 49rem;
+    top: -20rem;
+}
+
+.head {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--color8);
+}
+
+.hat {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    border: 50%;
+    background-color: var(--color2);
+    top: -9rem;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    left: 1rem;
+    z-index: 1;
+}
+
+.collar {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: var(--color1);
+    top: 8rem;
+}
+
+.leye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    top: 1rem;
+    left: 1rem;
+}
+
+.lp {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color6);
+    border-radius: 50%;
+    top: .5rem;
+    left: .5rem;
+    animation: 1s lp infinite;
+}
+@keyframes lp{
+    50%{
+        top: 1rem;
+        left: 1rem;
+    }
+}
+.reye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    top: 1rem;
+    left: 4.5rem;
+
+}
+
+.rp {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color6);
+    border-radius: 50%;
+    top: .5rem;
+    left: .5rem;
+    animation: 1s rp infinite;
+}
+@keyframes rp{
+    50%{
+        top: 1rem;
+        left: -.2rem;
+    }
+}
+.mouth {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color6);
+    top: 6rem;
+    left: 2rem;
+animation: 1s mouth infinite;
+}
+@keyframes mouth{
+    0%{
+
+    }
+    50%{
+left: 4rem;
+
+    }
+    100%{
+width: 50px;
+height: 0px;
+    }
+}
+
+.moustache {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+
+    top: 5rem;
+}
+
+.beard {
+
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    background-color: var(--color1);
+    top: 8rem;
+    left: 1rem;
+
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.lsidebern{
+position: absolute;
+background-color: var(--color1);
+width: 40px;
+height: 70px;
+top: 5rem;
+border-radius: 50%;
+transform: rotate(-20deg);
+}
+.rsidebern{
+    position: absolute;
+    background-color: var(--color1);
+    width: 40px;
+    height: 70px;
+    top: 5rem;
+    left: 8rem;
+    border-radius: 50%;
+    transform: rotate(20deg);
+}
+.torso {
+    position: absolute;
+    background-color: var(--color2);
+    width: 200px;
+    height: 300px;
+    top: 7rem;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.left-arm {
+
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: var(--color2);
+    left: -2.2rem;
+    border-top-left-radius: 50%;
+    top: 3rem;
+    transform: rotate(20deg);
+}
+
+.larm {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: var(--color2);
+    left: -.5rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    top: 4rem;
+    transform: rotate(20deg);
+}
+
+.left-hand {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: tan;
+    border-radius: 50%;
+    top: 4rem;
+}
+
+.l1 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 2.5rem;
+    top: 1rem;
+}
+
+.l2 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 2.5rem;
+    top: 2.4rem;
+    transform: rotate(20deg);
+}
+
+.l3 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 1rem;
+    top: 2.8rem;
+    transform: rotate(80deg);
+}
+
+.l4 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: -.5rem;
+    top: 2.3rem;
+    transform: rotate(-80deg);
+}
+
+.right-arm {
+
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: var(--color2);
+    left: 9rem;
+    border-top-right-radius: 50%;
+    top: 2rem;
+    transform: rotate(-20deg);
+    animation: 1s right-arm infinite;
+}
+
+@keyframes right-arm {
+    50% {
+        transform: rotate(-40deg);
+
+    }
+}
+
+.rarm {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: var(--color2);
+    left: .5rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    top: 4rem;
+    transform: rotate(-20deg);
+    animation: 1s rarm infinite;
+}
+
+@keyframes rarm {
+    0% {}
+
+    50% {
+        transform: skewY(50deg);
+    }
+
+    100% {
+        left: -1rem;
+        transform: rotate(100deg);
+    }
+}
+
+.right-hand {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: tan;
+    border-radius: 50%;
+    top: 4rem;
+    z-index: 10;
+}
+.ball{
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--color1);
+    width: 50px;
+    height: 50px;
+    top: 1rem;
+    animation: ball 1s linear infinite;
+    transform: skewY(-50deg);
+}
+@keyframes ball{
+    0%{
+left: 0;
+    }
+    50%{
+        top: -15rem;
+left: 22rem;
+    }
+    100%{
+left: 0;
+    }
+}
+.r1 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 2.5rem;
+    top: 1rem;
+}
+
+.r2 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 2.5rem;
+    top: 2.4rem;
+    transform: rotate(20deg);
+}
+
+.r3 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: 1rem;
+    top: 2.8rem;
+    transform: rotate(80deg);
+}
+
+.r4 {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: tan;
+    border-radius: 50%;
+    left: -.5rem;
+    top: 2.3rem;
+    transform: rotate(-80deg);
+}
+
+.left-leg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color2);
+    top: 15rem;
+    border: 2px solid black;
+}
+
+.lleg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color2);
+    top: 5rem;
+    border: 2px solid black;
+}
+
+.right-leg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color2);
+    top: 15rem;
+    left: 5rem;
+    border: 2px solid black;
+}
+
+.rleg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color2);
+    top: 5rem;
+    border: 2px solid black;
+}
+
+.belt {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: var(--color6);
+    top: 12rem;
+}
+
+.clasp {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color7);
+    left: 2rem;
+    border-radius: 20%;
+}
+
+.snowman {
+    position: relative;
+    left: 28rem;
+
+}
+
+.head1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    animation: .1s head1 infinite;
+}
+
+@keyframes head1 {
+    0% {}
+
+    50% {
+        transform: rotateY(150deg);
+        background-color: var(--color4);
+
+    }
+
+    100% {}
+}
+
+
+.e1 {
+    position: absolute;
+    background-color: var(--color6);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 2rem;
+    left: 2rem;
+}
+
+.e1a {
+    position: absolute;
+    background-color: var(--color1);
+    width: 20px;
+    height: 20px;
+    top: 1.5rem;
+    border-radius: 50%;
+    left: 1.5rem;
+}
+
+.e2 {
+    position: absolute;
+    background-color: var(--color6);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 2rem;
+    left: 9rem;
+}
+
+.e2a {
+    position: absolute;
+    background-color: var(--color1);
+    width: 20px;
+    height: 20px;
+    top: 1.5rem;
+    border-radius: 50%;
+    left: 1.5rem;
+}
+
+.nose {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 6rem;
+    top: 6rem;
+}
+
+.m {
+    position: absolute;
+    position: absolute;
+    background-color: var(--color6);
+    width: 80px;
+    height: 20px;
+    border-radius: 50%;
+    left: 6rem;
+    top: 10rem;
+    animation: m 1s linear infinite;
+}
+@keyframes m {
+    50%{
+        width: 
+    30px;
+        height: 80px;
+    }
+}
+.middle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 14.0rem;
+    z-index: -1;
+    left: -2rem;
+    animation: 1s middle infinite;
+}
+
+@keyframes middle {
+    0% {}
+
+    50% {
+        transform: rotateY(20deg);
+    }
+
+    100% {}
+}
+
+.lbranch {
+    position: absolute;
+    background-color: var(--color9);
+    width: 200px;
+    height: 20px;
+    left: -7rem;
+    top: 5rem;
+    transform: rotate(-20deg);
+    animation: 1s lbranch infinite;
+}
+
+@keyframes lbranch {
+    0% {}
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    100% {}
+}
+
+.s1 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -1rem;
+    top: -1rem;
+    transform: rotate(50deg);
+}
+
+.s2 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -1rem;
+    top: 1rem;
+    transform: rotate(100deg);
+}
+
+.s3 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -2rem;
+    top: -.5rem;
+    transform: rotate(0deg);
+}
+
+.rbranch {
+    position: absolute;
+    background-color: var(--color9);
+    width: 200px;
+    height: 20px;
+    left: 17rem;
+    top: 5rem;
+    transform: rotate(20deg);
+    animation: rbranch 1s linear infinite;
+
+}
+@keyframes rbranch{
+    50%{
+        left: 0px;
+transform: rotate(0deg);
+
+    }
+    50%{
+        left: -1px;
+transform: rotate(200deg);
+
+    }
+    100%{
+        left: 0px;
+transform: rotate(200deg);
+
+    }
+}
+.s4 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 8rem;
+    top: -1rem;
+    transform: rotate(80deg);
+}
+
+.s5 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 9.5rem;
+    top: .5rem;
+    transform: rotate(0deg);
+}
+
+.s6 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 1.5rem;
+    transform: rotate(70deg);
+}
+
+.btn1 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 6rem;
+
+}
+
+.btn2 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 10rem;
+}
+
+.btn3 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 2rem;
+}
+.bottom {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 28rem;
+    z-index: -2;
+    left: -3rem;
+}
+
+
+.snowman1{
+    position: relative;
+    left: -39rem;
+}
+.head2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 5rem;
+    left: -4rem;
+}
+.e1 {
+    position: absolute;
+    background-color: var(--color6);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 2rem;
+    left: 2rem;
+}
+
+.e1a {
+    position: absolute;
+    background-color: var(--color1);
+    width: 20px;
+    height: 20px;
+    top: 1.5rem;
+    border-radius: 50%;
+    left: 1.5rem;
+}
+
+.e2 {
+    position: absolute;
+    background-color: var(--color6);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 2rem;
+    left: 9rem;
+}
+
+.e2a {
+    position: absolute;
+    background-color: var(--color1);
+    width: 20px;
+    height: 20px;
+    top: 1.5rem;
+    border-radius: 50%;
+    left: 1.5rem;
+}
+
+.nose {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 6rem;
+    top: 6rem;
+}
+
+.m1 {
+    position: absolute;
+    position: absolute;
+    background-color: var(--color6);
+    width: 80px;
+    height: 20px;
+    border-radius: 50%;
+    left: 6rem;
+    top: 10rem;
+}
+
+.middle1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 17.0rem;
+    z-index: -1;
+    left: -2rem;
+}
+
+.lbranch1 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 200px;
+    height: 20px;
+    left: -7rem;
+    top: 5rem;
+    transform: rotate(-20deg);
+animation: lbranch1 1s linear infinite;
+}
+@keyframes lbranch1{
+    0%{
+
+    }
+    50%{
+        width: 100px;
+        left: 1rem;
+transform: rotate(90deg);
+    }
+    100%{
+
+    }
+}
+.ball1{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+left: -2rem;
+top: -1rem;
+z-index: 1;
+animation: ball1 1s linear infinite;
+}
+@keyframes ball1{
+    0%
+    {
+        /* left: -2rem; */
+        /* top: -1rem;   */
+}
+50%{
+    left: -15rem;
+    top: -42rem;
+
+}
+100%{
+    /* left: -2rem; */
+    /* top: -1rem; */
+}
+}
+.s1 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -1rem;
+    top: -1rem;
+    transform: rotate(50deg);
+}
+
+.s2 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -1rem;
+    top: 1rem;
+    transform: rotate(100deg);
+}
+
+.s3 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: -2rem;
+    top: -.5rem;
+    transform: rotate(0deg);
+}
+
+.rbranch1 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 200px;
+    height: 20px;
+    left: 11rem;
+    top: 5rem;
+    transform: rotate(20deg);
+
+}
+
+.s4 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 8rem;
+    top: -1rem;
+    transform: rotate(80deg);
+}
+
+.s5 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 9.5rem;
+    top: .5rem;
+    transform: rotate(0deg);
+}
+
+.s6 {
+    position: absolute;
+    background-color: var(--color9);
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 1.5rem;
+    transform: rotate(70deg);
+}
+
+.btn4 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 6rem;
+
+}
+
+.btn5 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 10rem;
+}
+
+.btn6 {
+    position: absolute;
+    background-color: var(--color6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 8rem;
+    top: 2rem;
+}
+.bottom1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--color1);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 28rem;
+    z-index: -2;
+    left: -3rem;
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "category": "cars",
+        "item": "camaro",
+        "price": "1000",
+        "location": "here",
+        "name": "john doe",
+        "email": "johndoe@mymail.com",
+        "phonhe": "564574734"
+    }
+]
